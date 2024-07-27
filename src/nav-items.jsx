@@ -1,4 +1,4 @@
-import { Landmark, Book, PaintBrush, Plane } from "lucide-react";
+import { Landmark, Book, Plane } from "lucide-react";
 import Index from "./pages/Index";
 
 /**
@@ -20,7 +20,7 @@ export const navItems = [
   {
     title: "Culture",
     to: "/culture",
-    icon: <PaintBrush className="h-4 w-4" />,
+    icon: <Book className="h-4 w-4" />, // Changed from PaintBrush to Book
     page: <div>Culture Page</div>, // Placeholder
   },
   {
