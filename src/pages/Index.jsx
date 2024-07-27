@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
-      <div className="container mx-auto px-4 py-16">
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-grow bg-gradient-to-b from-red-50 to-white">
+        <div className="container mx-auto px-4 py-16">
         <motion.header 
           className="text-center mb-16"
           initial={{ opacity: 0, y: -50 }}
@@ -70,7 +74,9 @@ const Index = () => {
           </p>
           <Button variant="secondary" size="lg" className="text-lg px-8 py-4">Start Planning</Button>
         </motion.div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

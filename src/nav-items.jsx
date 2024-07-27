@@ -1,4 +1,4 @@
-import { Landmark } from "lucide-react";
+import { Landmark, Book, PaintBrush, Plane } from "lucide-react";
 import Index from "./pages/Index";
 
 /**
@@ -10,5 +10,23 @@ export const navItems = [
     to: "/",
     icon: <Landmark className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "History",
+    to: "/history",
+    icon: <Book className="h-4 w-4" />,
+    page: <div>History Page</div>, // Placeholder
+  },
+  {
+    title: "Culture",
+    to: "/culture",
+    icon: <PaintBrush className="h-4 w-4" />,
+    page: <div>Culture Page</div>, // Placeholder
+  },
+  {
+    title: "Plan Your Trip",
+    to: "/plan",
+    icon: <Plane className="h-4 w-4" />,
+    page: <div>Trip Planning Page</div>, // Placeholder
   },
 ];
